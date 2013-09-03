@@ -1,0 +1,83 @@
+﻿/*Message Box*/
+.info, .success, .warning, .error, .validation
+{
+	border: 1px solid;
+	margin: 10px 0px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+.info
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #AECAFC;
+	
+	background-image: url( '../images/info.png' );
+}
+.success
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #AECAFC;
+	background-image: url( '../images/success.png' );
+}
+.warning
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #AECAFC;
+	background-image: url( '../images/warning.png' );
+}
+.error
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #AECAFC;
+	background-image: url( '../images/error.png' );
+}
+
+.info p, .success p, .warning p, .error p
+{
+	padding: 0px 50px;
+	text-align: center;
+}
+.info a, .success a, .warning a, .error a
+{
+	float: right;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+.messageheader
+{
+	background: url(images/sprite.png) repeat-x 0px -200px;
+	height: 18px;
+	padding: 5px;
+	border-bottom: solid 1px black;
+}
+
+.messageheadertext
+{
+	color: Black;
+	float: left;
+	font-weight: bold;
+}
+
+.messagefooter
+{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.messagemodalbackground
+{
+	background-color: Black;
+	filter: alpha(opacity=50);
+	opacity: 0.6;
+	z-index: 998;
+}
+

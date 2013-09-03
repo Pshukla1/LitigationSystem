@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Matter_Stage" msprop:Generator_TableClassName="Matter_StageDataTable" msprop:Generator_TableVarName="tableMatter_Stage" msprop:Generator_TablePropName="Matter_Stage" msprop:Generator_RowDeletingName="Matter_StageRowDeleting" msprop:Generator_UserTableName="Matter_Stage" msprop:Generator_RowChangingName="Matter_StageRowChanging" msprop:Generator_RowEvHandlerName="Matter_StageRowChangeEventHandler" msprop:Generator_RowDeletedName="Matter_StageRowDeleted" msprop:Generator_RowEvArgName="Matter_StageRowChangeEvent" msprop:Generator_RowChangedName="Matter_StageRowChanged" msprop:Generator_RowClassName="Matter_StageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matter_number" msprop:Generator_ColumnVarNameInTable="columnMatter_number" msprop:Generator_ColumnPropNameInRow="Matter_number" msprop:Generator_ColumnPropNameInTable="Matter_numberColumn" msprop:Generator_UserColumnName="Matter_number" type="xs:string" minOccurs="0" />
+              <xs:element name="Assigned" msprop:Generator_ColumnVarNameInTable="columnAssigned" msprop:Generator_ColumnPropNameInRow="Assigned" msprop:Generator_ColumnPropNameInTable="AssignedColumn" msprop:Generator_UserColumnName="Assigned" type="xs:string" minOccurs="0" />
+              <xs:element name="Supervier" msprop:Generator_ColumnVarNameInTable="columnSupervier" msprop:Generator_ColumnPropNameInRow="Supervier" msprop:Generator_ColumnPropNameInTable="SupervierColumn" msprop:Generator_UserColumnName="Supervier" type="xs:string" minOccurs="0" />
+              <xs:element name="Matter_Type_Desc" msprop:Generator_ColumnVarNameInTable="columnMatter_Type_Desc" msprop:Generator_ColumnPropNameInRow="Matter_Type_Desc" msprop:Generator_ColumnPropNameInTable="Matter_Type_DescColumn" msprop:Generator_UserColumnName="Matter_Type_Desc" type="xs:string" minOccurs="0" />
+              <xs:element name="Staus_Desc" msprop:Generator_ColumnVarNameInTable="columnStaus_Desc" msprop:Generator_ColumnPropNameInRow="Staus_Desc" msprop:Generator_ColumnPropNameInTable="Staus_DescColumn" msprop:Generator_UserColumnName="Staus_Desc" type="xs:string" minOccurs="0" />
+              <xs:element name="stage_type_desc" msprop:Generator_ColumnVarNameInTable="columnstage_type_desc" msprop:Generator_ColumnPropNameInRow="stage_type_desc" msprop:Generator_ColumnPropNameInTable="stage_type_descColumn" msprop:Generator_UserColumnName="stage_type_desc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

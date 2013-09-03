@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="T_P_PF_DATA" targetNamespace="http://tempuri.org/T_P_PF_DATA.xsd" xmlns:mstns="http://tempuri.org/T_P_PF_DATA.xsd" xmlns="http://tempuri.org/T_P_PF_DATA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="T_P_PF_DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="T_P_PF_DATA" msprop:Generator_DataSetName="T_P_PF_DATA">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_P_PF_DATA" msprop:Generator_TableClassName="T_P_PF_DATADataTable" msprop:Generator_TableVarName="tableT_P_PF_DATA" msprop:Generator_TablePropName="_T_P_PF_DATA" msprop:Generator_RowDeletingName="T_P_PF_DATARowDeleting" msprop:Generator_UserTableName="T_P_PF_DATA" msprop:Generator_RowChangingName="T_P_PF_DATARowChanging" msprop:Generator_RowEvHandlerName="T_P_PF_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="T_P_PF_DATARowDeleted" msprop:Generator_RowEvArgName="T_P_PF_DATARowChangeEvent" msprop:Generator_RowChangedName="T_P_PF_DATARowChanged" msprop:Generator_RowClassName="T_P_PF_DATARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PF_NO" msprop:Generator_ColumnVarNameInTable="columnPF_NO" msprop:Generator_ColumnPropNameInRow="PF_NO" msprop:Generator_ColumnPropNameInTable="PF_NOColumn" msprop:Generator_UserColumnName="PF_NO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACT_MONTH" msprop:Generator_ColumnVarNameInTable="columnACT_MONTH" msprop:Generator_ColumnPropNameInRow="ACT_MONTH" msprop:Generator_ColumnPropNameInTable="ACT_MONTHColumn" msprop:Generator_UserColumnName="ACT_MONTH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAY_CODE" msprop:Generator_ColumnVarNameInTable="columnPAY_CODE" msprop:Generator_ColumnPropNameInRow="PAY_CODE" msprop:Generator_ColumnPropNameInTable="PAY_CODEColumn" msprop:Generator_UserColumnName="PAY_CODE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EMPL_CODE" msprop:Generator_ColumnVarNameInTable="columnEMPL_CODE" msprop:Generator_ColumnPropNameInRow="EMPL_CODE" msprop:Generator_ColumnPropNameInTable="EMPL_CODEColumn" msprop:Generator_UserColumnName="EMPL_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPL_NAME" msprop:Generator_ColumnVarNameInTable="columnEMPL_NAME" msprop:Generator_ColumnPropNameInRow="EMPL_NAME" msprop:Generator_ColumnPropNameInTable="EMPL_NAMEColumn" msprop:Generator_UserColumnName="EMPL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAT_HUS_NAME" msprop:Generator_ColumnVarNameInTable="columnFAT_HUS_NAME" msprop:Generator_ColumnPropNameInRow="FAT_HUS_NAME" msprop:Generator_ColumnPropNameInTable="FAT_HUS_NAMEColumn" msprop:Generator_UserColumnName="FAT_HUS_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LEAV_DATE" msprop:Generator_ColumnVarNameInTable="columnLEAV_DATE" msprop:Generator_ColumnPropNameInRow="LEAV_DATE" msprop:Generator_ColumnPropNameInTable="LEAV_DATEColumn" msprop:Generator_UserColumnName="LEAV_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EMPL_STAT" msprop:Generator_ColumnVarNameInTable="columnEMPL_STAT" msprop:Generator_ColumnPropNameInRow="EMPL_STAT" msprop:Generator_ColumnPropNameInTable="EMPL_STATColumn" msprop:Generator_UserColumnName="EMPL_STAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMT" msprop:Generator_ColumnVarNameInTable="columnAMT" msprop:Generator_ColumnPropNameInRow="AMT" msprop:Generator_ColumnPropNameInTable="AMTColumn" msprop:Generator_UserColumnName="AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AB" msprop:Generator_ColumnVarNameInTable="columnAB" msprop:Generator_ColumnPropNameInRow="AB" msprop:Generator_ColumnPropNameInTable="ABColumn" msprop:Generator_UserColumnName="AB" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EMPL_TYPE" msprop:Generator_ColumnVarNameInTable="columnEMPL_TYPE" msprop:Generator_ColumnPropNameInRow="EMPL_TYPE" msprop:Generator_ColumnPropNameInTable="EMPL_TYPEColumn" msprop:Generator_UserColumnName="EMPL_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPPFCODE" msprop:Generator_ColumnVarNameInTable="columnEMPPFCODE" msprop:Generator_ColumnPropNameInRow="EMPPFCODE" msprop:Generator_ColumnPropNameInTable="EMPPFCODEColumn" msprop:Generator_UserColumnName="EMPPFCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HIGH_PF_AMT" msprop:Generator_ColumnVarNameInTable="columnHIGH_PF_AMT" msprop:Generator_ColumnPropNameInRow="HIGH_PF_AMT" msprop:Generator_ColumnPropNameInTable="HIGH_PF_AMTColumn" msprop:Generator_UserColumnName="HIGH_PF_AMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACT_DATE" msprop:Generator_ColumnVarNameInTable="columnACT_DATE" msprop:Generator_ColumnPropNameInRow="ACT_DATE" msprop:Generator_ColumnPropNameInTable="ACT_DATEColumn" msprop:Generator_UserColumnName="ACT_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HPF_RATE" msprop:Generator_ColumnVarNameInTable="columnHPF_RATE" msprop:Generator_ColumnPropNameInRow="HPF_RATE" msprop:Generator_ColumnPropNameInTable="HPF_RATEColumn" msprop:Generator_UserColumnName="HPF_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LCTN_CODE" msprop:Generator_ColumnVarNameInTable="columnLCTN_CODE" msprop:Generator_ColumnPropNameInRow="LCTN_CODE" msprop:Generator_ColumnPropNameInTable="LCTN_CODEColumn" msprop:Generator_UserColumnName="LCTN_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

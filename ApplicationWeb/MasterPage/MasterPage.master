@@ -1,0 +1,518 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Habib" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" id="Head1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Habib AlMulla</title>
+    <link id="lnkCSS" href="~/css/general.css" runat="server" rel="stylesheet" type="text/css" />
+    <link media="screen" href="~/css/reset.css" type="text/css" rel="stylesheet">
+    <link media="screen" href="~/css/text.css" type="text/css" rel="stylesheet">
+  <%--  <link media="screen" href="~/css/grid.css" type="text/css" rel="stylesheet">--%>
+    <link media="screen" href="~/css/layout1.css" type="text/css" rel="stylesheet">
+    <link media="screen" href="~/css/nav.css" type="text/css" rel="stylesheet">
+    <link media="screen" href="~/css/colorbox.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="~/css/table/demo_page.css">
+    <style type="text/css">
+        
+    </style>
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <%-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>--%>
+    <script src="js/jquery-ui/jquery.ui.core.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.ui.accordion.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.effects.core.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.effects.slide.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.ui.mouse.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery.ui.sortable.min.js"></script>
+    <script type="text/javascript" src="js/table/jquery.dataTables.min.js"></script>
+    <!-- END: load jquery -->
+    <script src="js/table/table.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/setup.js"></script>
+    <%--  <script src="~/js/jquery.colorbox.js"></script>--%>
+    <!-- END: Chossen jquery -->
+    <script src="../../chosen-master/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+    <link href="~/chosen-master/chosen/chosen.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/jquery.colorbox.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="~/css/popupstyle.css" type="text/css" />
+    <link href="~/css/GridNew.css" rel="stylesheet" type="text/css" />
+    <%--<script type="text/javascript">
+
+        $(document).ready(function () {
+            setupLeftMenu();
+
+            $('.datatable').dataTable();
+            setSidebarHeight();
+
+            $(".inline").colorbox({ inline: true, width: "50%" });
+        });
+    </script>--%>
+    <style>
+        html, body
+        {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background: #F8F8F8;
+            font-size: 11px;
+        }
+        
+        #add-new-table
+        {
+        }
+        
+        #add-new-table a
+        {
+            color: #777777;
+            cursor: pointer;
+            display: inline-block;
+            font: 700 11px Arial,sans-serif;
+            padding: 7px 12px;
+            position: relative;
+            text-decoration: none;
+        }
+        #add-new-table a:hover, #add-new-table a:hover
+        {
+           /* background: none repeat scroll 0 0 #A71930;
+            color: #FFFFFF;*/
+        }
+        #add-new
+        {
+            background: none repeat scroll 0 0 #F3F1FF;
+        }
+        #add-new a
+        {
+            color: #3D66A6;
+        }
+        form input:focus, form select:focus, form textarea:focus
+        {
+            outline: none;
+            border: 1px solid #77BACE; /* -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+            -moz-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+            box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6; */
+        }
+        table.form input, table.form select
+        {
+            border-radius: 3px; /* background: none repeat scroll 0 0 #FFFFFF;*/
+            border: 1px solid #bbb; /*border-radius: 3px 3px 3px 3px;*/
+            font-family: Arial;
+            font-size: 11px;
+            padding: 5px 3px;
+        }
+        .container_12 .grid_12
+        {
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 100%;
+        }
+        
+        ul.nav
+        {
+            background: url("../img/nav-repeat21.jpg") repeat-x scroll 0 0 #41627E !important;
+            height: 3.7em;
+            max-width: 100%;
+            position: relative;
+        }
+        
+        .box h2
+        {
+            background: none repeat scroll 0 0 #E6F0F3;
+        }
+        #site_info a:hover
+        {
+            color: #A71930;
+        }
+        
+        #branding
+        {
+            padding: 0.3em;
+        }
+        .box1
+        {
+        }
+        .box1:hover
+        {
+            cursor: pointer;
+        }
+        .matter-detail li
+        {
+            list-style: none;
+            border-bottom: 1px solid #E6E6E6;
+        }
+        .h_title
+        {
+            font-weight: bold;
+        }
+        .matter-detail li a
+        {
+            font-weight: normal;
+        }
+        .matter-detail li a:hover
+        {
+            color: #A71930;
+            text-decoration: underline;
+        }
+        .matter table
+        {
+            margin-bottom: 0px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".box1 .h_title").not(this).next("ul").hide("normal");
+            $(".box1 .h_title").not(this).next("#home").show("normal");
+            $(".box1").children(".h_title").click(function () { $(this).next("ul").slideToggle(); });
+            // Datepicker
+            /*$('#datepicker').datepicker({
+            inline: true
+            });*/
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager runat="server" ID="ScriptManager1">
+    </asp:ScriptManager>
+    <table align="center" width="100%">
+        <tr>
+            <td valign="top">
+                <div class="container_12">
+                    <table align="center" width="100%">
+                        <tr>
+                            <td colspan="3">
+                                <div class="grid_12 header-repeat" style="background: url('../img/header-repeat1.jpg') repeat-x scroll 0 0 #fff;
+                                    border-top: 0px solid #333366; box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);">
+                                    <div id="branding">
+                                        <div class="floatleft logo-header">
+                                            <asp:Panel runat="server" ID="pnlEnlish" Visible="false">
+                                                <img alt="logo" src="<%=ResolveClientUrl("~/img/habib.png")%>" height="50px" />
+                                            </asp:Panel>
+                                            <asp:Panel runat="server" ID="pnlArebic" Visible="false">
+                                                <img alt="logo" src="<%=ResolveClientUrl("~/img/habib.png")%>" height="50px" />
+                                            </asp:Panel>
+                                            <%-- <img alt="Logo" src="<%=ResolveClientUrl("~/img/habib.png")%>" width="350px" height="56px">--%></div>
+                                        <div class="floatleft logo-header">
+                                            <p style="color: #A71930; font-size: 21px; font-weight: bold; padding-left: 100px;
+                                                padding-right: 170px; padding-top: 0%; text-decoration: none;">
+                                                <asp:Label ID="lblheader" runat="server" Text="Litigation  Managment System" meta:resourcekey="Mheader"></asp:Label>
+                                            </p>
+                                        </div>
+                                        <span style="display: block;" class="small grey header-login">
+                                            <ul class="inline-ul floatleft">
+                                                <li style="color: black;">
+                                                    <asp:LinkButton ID="LanguageEnglish" runat="server" Text="English" CommandArgument="en-GB"
+                                                        CssClass="Link" OnClick="RequestLanguageChange_Click"></asp:LinkButton>&nbsp;|&nbsp;
+                                                </li>
+                                                <li>
+                                                    <asp:LinkButton ID="LanguageArebic" runat="server" Text="العربية" CommandArgument="ar-AE"
+                                                        CssClass="Link" OnClick="RequestLanguageChange_Click"></asp:LinkButton>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        <br>
+                                        <div class="floatright user-name">
+                                            <div class="floatleft">
+                                                <%-- <img src="../../img/img-profile.jpg" alt="Profile Pic">--%></div>
+                                            <div class="floatleft marginleft10 ">
+                                                <ul class="inline-ul floatleft">
+                                                    <li style="color: black;">Hello&nbsp
+                                                        <asp:Label ID="lblname" runat="server" CssClass="NormalText"></asp:Label></li>
+                                                    <li>
+                                                        <%--<asp:LinkButton ID="LinkButton1" runat="server" ForeColor="Black" PostBackUrl="#">Config</asp:LinkButton>&nbsp&nbsp--%></li>
+                                                    <li>
+                                                        <asp:LinkButton ID="lnk_logout" CssClass="NormalText" runat="server" ForeColor="Red"
+                                                            PostBackUrl="~/SignOut.aspx">Sign Out</asp:LinkButton></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <asp:Panel ID="Lawyer" runat="server" Visible="false">
+                                    <div class="grid_12">
+                                        <ul class="nav main">
+                                            <li class="ic-dashboard"><a href="../../Matter/Dashboards/LawyerDashBoard.aspx">
+                                                <asp:Label ID="lblsubmenuDashBoardAR1" runat="server" Text="My Dashboard" meta:resourcekey="MDashboard"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-form-style"><a href="../../Matter/ViewMatter/ViewAllMatter.aspx">
+                                                <asp:Label ID="lblMainMenuMatterEN1" runat="server" Text="Matters" meta:resourcekey="MMatter"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-charts"><a href="../../Matter/Cases/CasesDetails.aspx?Case_ID=0">
+                                                <asp:Label ID="Label4" runat="server" Text="Cases" meta:resourcekey="MCases"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-charts"><a href="../../Matter/Hearings/Hearings.aspx?Hearing_ID=0">
+                                                <asp:Label ID="lblMainMenuHeraingEN1" runat="server" Text="Hearing" meta:resourcekey="MHearings"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-grid-tables"><a href="table.html">
+                                                <asp:Label ID="lblMainMenuClientAR1" runat="server" Text="Client" meta:resourcekey="MClient"></asp:Label></a></li>
+                                            <li class="ic-gallery dd"><a href="#">
+                                                <asp:Label ID="lblMainMenuReportEN1" runat="server" Text="Report" meta:resourcekey="MReports"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport1" runat="server" meta:resourcekey="report1"></asp:Label></a>
+                                                    </li>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport2" runat="server" Text="Alert" meta:resourcekey="report2"></asp:Label></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-notifications"><a href="../../Matter/Alerts/AlertsPage.aspx">
+                                                <asp:Label ID="lblMainMenuAlertEN1" runat="server" Text="Alert" meta:resourcekey="MAlerts"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-typography"><a href="../../Matter/Settings/Settings.aspx">
+                                                <asp:Label ID="lblMainMenuSettingsEN1" runat="server" Text="Settings" meta:resourcekey="MSettings"></asp:Label>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="Dataentry" runat="server" Visible="false">
+                                    <div class="grid_12">
+                                        <ul class="nav main">
+                                            <li class="ic-dashboard"><a href="../../Matter/Dashboards/DataEntryDashboard.aspx">
+                                                <asp:Label ID="lblsubmenuDashBoardAR2" runat="server" Text="My Dashboard" meta:resourcekey="MDashboard"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-form-style"><a href="../../Matter/ViewMatter/ViewAllMatter.aspx">
+                                                <asp:Label ID="lblMainMenuMatterEN2" runat="server" Text="Matters" meta:resourcekey="MMatter"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-charts"><a href="../../Matter/Cases/CasesDetails.aspx?Case_ID=0">
+                                                <asp:Label ID="Label6" runat="server" Text="Cases" meta:resourcekey="MCases"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-charts"><a href="../../Matter/Hearings/Hearings.aspx?Hearing_ID=0">
+                                                <asp:Label ID="lblMainMenuHeraingEN2" runat="server" Text="Hearing" meta:resourcekey="MHearings"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-grid-tables"><a href="table.html">
+                                                <asp:Label ID="lblMainMenuClientAR2" runat="server" Text="Client" meta:resourcekey="MClient"></asp:Label></a></li>
+                                            <li class="ic-gallery dd"><a href="#">
+                                                <asp:Label ID="lblMainMenuReportEN2" runat="server" Text="Report" meta:resourcekey="MReports"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport3" runat="server" meta:resourcekey="report1"></asp:Label></a>
+                                                    </li>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport4" runat="server" Text="Alert" meta:resourcekey="report2"></asp:Label></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-notifications"><a href="../../Matter/Alerts/AlertsPage.aspx">
+                                                <asp:Label ID="lblMainMenuAlertEN2" runat="server" Text="Alert" meta:resourcekey="MAlerts"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-typography"><a href="../../Matter/Settings/Settings.aspx">
+                                                <asp:Label ID="lblMainMenuSettingsEN2" runat="server" Text="Settings" meta:resourcekey="MSettings"></asp:Label>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="Secretary" runat="server" Visible="false">
+                                    <div class="grid_12">
+                                        <ul class="nav main">
+                                            <li class="ic-dashboard"><a href="../../Matter/Dashboards/SecretaryDashboard.aspx">
+                                                <asp:Label ID="lblsubmenuDashBoardAR3" runat="server" Text="My Dashboard" meta:resourcekey="MDashboard"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-form-style"><a href="../../Matter/ViewMatter/ViewAllMatter.aspx">
+                                                <asp:Label ID="lblMainMenuMatterEN3" runat="server" Text="Matters" meta:resourcekey="MMatter"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-charts"><a href="../../Matter/Cases/CasesDetails.aspx?Case_ID=0">
+                                                <asp:Label ID="Label5" runat="server" Text="Cases" meta:resourcekey="MCases"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-charts"><a href="../../Matter/Hearings/Hearings.aspx?Hearing_ID=0">
+                                                <asp:Label ID="lblMainMenuHeraingEN3" runat="server" Text="Hearing" meta:resourcekey="MHearings"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-grid-tables"><a href="table.html">
+                                                <asp:Label ID="lblMainMenuClientAR3" runat="server" Text="Client" meta:resourcekey="MClient"></asp:Label></a></li>
+                                            <li class="ic-gallery dd"><a href="#">
+                                                <asp:Label ID="lblMainMenuReportEN3" runat="server" Text="Report" meta:resourcekey="MReports"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport6" runat="server" meta:resourcekey="report1"></asp:Label></a>
+                                                    </li>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport7" runat="server" Text="Alert" meta:resourcekey="report2"></asp:Label></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-notifications"><a href="../../Matter/Alerts/AlertsPage.aspx">
+                                                <asp:Label ID="lblMainMenuAlertEN3" runat="server" Text="Alert" meta:resourcekey="MAlerts"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-typography"><a href="../../Matter/Settings/Settings.aspx">
+                                                <asp:Label ID="lblMainMenuSettingsEN3" runat="server" Text="Settings" meta:resourcekey="MSettings"></asp:Label>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="Manager" runat="server" Visible="false">
+                                    <div class="grid_12">
+                                        <ul class="nav main">
+                                            <li class="ic-dashboard"><a href="../../Matter/Dashboards/ManagerDashboard.aspx">
+                                                <asp:Label ID="lblsubmenuDashBoardAR4" runat="server" Text="My Dashboard" meta:resourcekey="MDashboard"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-form-style"><a href="../../Matter/ViewMatter/ViewAllMatter.aspx">
+                                                <asp:Label ID="lblMainMenuMatterEN4" runat="server" Text="Matters" meta:resourcekey="MMatter"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-charts"><a href="../../Matter/Cases/CasesDetails.aspx?Case_ID=0">
+                                                <asp:Label ID="Label3" runat="server" Text="Cases" meta:resourcekey="MCases"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-charts"><a href="../../Matter/Hearings/Hearings.aspx?Hearing_ID=0">
+                                                <asp:Label ID="lblMainMenuHeraingEN4" runat="server" Text="Hearing" meta:resourcekey="MHearings"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-grid-tables"><a href="table.html">
+                                                <asp:Label ID="lblMainMenuClientAR4" runat="server" Text="Client" meta:resourcekey="MClient"></asp:Label></a></li>
+                                            <li class="ic-gallery dd"><a href="#">
+                                                <asp:Label ID="lblMainMenuReportEN4" runat="server" Text="Report" meta:resourcekey="MReports"></asp:Label>
+                                            </a>
+                                                <ul>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport9" runat="server" meta:resourcekey="report1"></asp:Label></a>
+                                                    </li>
+                                                    <li><a href="../../Matter/Reports/PrintMatter.aspx">
+                                                        <asp:Label ID="lblreport8" runat="server" Text="Alert" meta:resourcekey="report2"></asp:Label></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="ic-notifications"><a href="../../Matter/Alerts/AlertsPage.aspx">
+                                                <asp:Label ID="lblMainMenuAlertEN4" runat="server" Text="Alert" meta:resourcekey="MAlerts"></asp:Label>
+                                            </a></li>
+                                            <li class="ic-typography"><a href="../../Matter/Settings/Settings.aspx">
+                                                <asp:Label ID="lblMainMenuSettingsEN4" runat="server" Text="Settings" meta:resourcekey="MSettings"></asp:Label>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="clear">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <div style="width: 220px; min-height: 500px; margin-left: 8%;" class="grid 21">
+                                    <div class="box round first grid">
+                                        <h2>
+                                            <asp:Label ID="Label1" runat="server" Text=" Matter overview" meta:resourcekey="MOverView"></asp:Label>
+                                        </h2>
+                                        <asp:UpdatePanel ID="TreePanel" runat="server" UpdateMode="Always">
+                                            <ContentTemplate>
+                                                <asp:TreeView ID="MatterTreeView" runat="server" ImageSet="BulletedList3" CssClass="matter"
+                                                    ShowExpandCollapse="False">
+                                                    <HoverNodeStyle Font-Underline="True" ForeColor="#A71930" />
+                                                    <Nodes>
+                                                        <asp:TreeNode Text="Matter NO." Value="Matter Number" meta:resourcekey="TMatter">
+                                                            <asp:TreeNode Text="Stages" Value="Stages" meta:resourcekey="TStage"></asp:TreeNode>
+                                                            <asp:TreeNode Text="Cases" Value="Cases" meta:resourcekey="TCases"></asp:TreeNode>
+                                                            <asp:TreeNode Text="Hearings" Value="Hearings" meta:resourcekey="THearings"></asp:TreeNode>
+                                                            <asp:TreeNode Text="Fee Details &amp; POA" Value="Fee Details &amp; POA" meta:resourcekey="TFeeDetails">
+                                                            </asp:TreeNode>
+                                                            <asp:TreeNode Text="Parties" Value="Parties" meta:resourcekey="TPartyies"></asp:TreeNode>
+                                                        </asp:TreeNode>
+                                                    </Nodes>
+                                                    <NodeStyle Font-Names="Arial" Font-Size="8pt" ForeColor="#A71930" HorizontalPadding="5px"
+                                                        NodeSpacing="0px" VerticalPadding="0px" />
+                                                    <ParentNodeStyle Font-Bold="False" />
+                                                    <SelectedNodeStyle Font-Underline="True" ForeColor="#A71930" HorizontalPadding="0px"
+                                                        VerticalPadding="0px" />
+                                                </asp:TreeView>
+                                            </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </div>
+                                    <div class="box round first grid">
+                                        <h2>
+                                            <asp:Label ID="Label2" runat="server" Text=" Alerts" meta:resourcekey="MPalerts"></asp:Label>
+                                        </h2>
+                                        <asp:UpdatePanel runat="server" ID="Alertpnl">
+                                            <ContentTemplate>
+                                                <div style="height: 450px">
+                                                    <div id="datepicker">
+                                                        <asp:Calendar ID="CalAlert" runat="server" BackColor="#ffffff" BorderColor="#5E6A71"
+                                                            DayNameFormat="Shortest" Font-Names="arial" Font-Size="8pt" ForeColor="#5E6A71 "
+                                                            Height="175px" Width="200px" BorderWidth="1px" ShowGridLines="True" OnSelectionChanged="CalAlert_SelectionChanged">
+                                                            <DayHeaderStyle BackColor="#ffffff" Height="1px" />
+                                                            <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
+                                                            <OtherMonthDayStyle ForeColor="#0083A9"></OtherMonthDayStyle>
+                                                            <SelectorStyle BackColor="#ffffff" />
+                                                            <TitleStyle BackColor="#D3D3D3" Font-Bold="True" Font-Size="9pt" ForeColor="#0083A9" />
+                                                            <TodayDayStyle ForeColor="White" BackColor="#A71930" />
+                                                            <SelectedDayStyle BackColor="#A71930" Font-Bold="True"></SelectedDayStyle>
+                                                        </asp:Calendar>
+                                                    </div>
+                                                    <asp:LinkButton ID="lnlshowAll" runat="server" meta:resourcekey="ShowAll" OnClick="lnlshowAll_Click"></asp:LinkButton>
+                                                    <hr style="height: 1px" />
+                                                    <asp:GridView ID="idAlert" runat="server" Width="100%" CssClass="GridViewStyle" AutoGenerateColumns="false"
+                                                        AllowPaging="true" GridLines="Both">
+                                                        <Columns>
+                                                            <asp:BoundField DataField="Matter_number" HeaderText="Matter_number" meta:resourcekey="Matter_number" />
+                                                            <asp:BoundField DataField="Due_date" HeaderText="Due_date" DataFormatString="{0:dd/MM/yy}"
+                                                                meta:resourcekey="Due_date" />
+                                                            <asp:BoundField DataField="Alert_Type_En" HeaderText="Alert Type" meta:resourcekey="Alert_Type_En" />
+                                                        </Columns>
+                                                        <%--<RowStyle CssClass="RowStyle" Height="15px" />
+                                                <SelectedRowStyle CssClass="SelectedRowStyle" />
+                                                <AlternatingRowStyle CssClass="AltRowStyle" />
+                                                <HeaderStyle CssClass="HeaderStyle" />--%>
+                                                        <PagerStyle CssClass="PagerStyle" HorizontalAlign="Left" BackColor="#C9C9C9" ForeColor="#A71930" />
+                                                    </asp:GridView>
+                                                </div>
+                                            </ContentTemplate>
+                                            <Triggers>
+                                            </Triggers>
+                                        </asp:UpdatePanel>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 40px" valign="top">
+                            </td>
+                            <td valign="top">
+                                <div>
+                                    <table align="center" width="95%">
+                                        <tr>
+                                            <td class="box" valign="top" style="background-color: transparent;">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div id="site_info">
+                                    <p>
+                                        Copyright <a href="#">Baker&McKenzie.Habib Al Mulla</a>. All Rights Reserved.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <%--  <div class="clear">
+    </div>--%>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,425 @@
+﻿
+body {
+	color: #5E6A71;
+	font-size: 13px;
+	font-family:Arial;
+	background-color:#ffffff;
+	background-image:none;
+	direction :rtl;
+	margin-left:1px;
+    margin-right:1px;
+	
+}
+
+#all 
+{
+margin-left:20px;
+margin-right:20px;
+background-color:#ffffff;
+background-image:none;
+top:0px;
+width:95%
+}
+
+
+.logo-placeholder 
+{
+
+    float:right;
+   
+}
+.lang-placeholder 
+{
+    float:left;
+    text-align:left;
+    
+}
+
+.login-form {
+	margin-right:40%;
+	padding-right:20px;
+}
+
+.form-label {
+    float:right;   
+    
+}
+.HeaderText1
+{
+    position:relative;
+    font-weight:bold;
+    color:#5E6A71;
+     
+ }
+.HeaderText
+{
+    position:relative;
+    font-weight:bold;
+    color:#5E6A71;
+     float:left;
+ }
+ 
+.NormalText
+{
+   position:relative;
+    font-family:Arial;
+    font-size:11px;
+    color:#5E6A71;
+   
+ }
+ 
+  .div
+{
+    position:relative;
+    font-family:Arial;
+    font-size:14px;
+    color:#5E6A71;
+    background-color:#F2F2F2 ;
+    border:1px  solid #E8E6E7;
+}
+
+
+a:link {
+color: #A71930;
+text-decoration:none;
+
+}
+
+a:hover {
+color: #A71930;
+text-decoration:underline;
+}
+
+a:visited {
+color: #A71930;
+text-decoration:none;
+}
+select,
+input[type="text"],
+input[type="password"] {
+     padding: 1px 0px 1px 0px; 
+    border: solid 1px #D2C295;  
+    outline: 0;  
+    width: 180px;  
+    background: #FFFFFF;
+  
+	
+
+}
+select,
+input[type="text"]:hover,  
+input[type="text"]:focus,
+input[type="password"]:hover,  
+input[type="password"]:focus{   
+
+    border-color: #D2C295;   
+    }  
+	
+
+/*input[type="submit"], .submit, input[type="button"], .button, input[type="reset"], .reset {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D58000), color-stop(1, #0099bf) ) !important;
+	background:-moz-linear-gradient( center top, #D58000 5%, #0099bf 100% ) !important;
+	background-color:#D58000 !important;
+	border:1px solid #D58000 !important;
+	display:inline-block !important;
+	color:#ffffff !important;
+	font-size:15px !important;
+	font-weight:bold !important;
+	padding:5px 15px !important;
+	text-decoration:none !important;
+	
+    
+}*/
+
+
+	input[type="submit"]:hover, .submit:hover, input[type="button"]:hover, .button:hover, input[type="reset"]:hover, .reset:hover {
+	
+	cursor:pointer;
+	
+}
+
+input[type="submit"]:active, .submit:active, input[type="button"]:active, .button:active, input[type="reset"]:active, .reset:active{
+		position:relative;
+		top:.05px;
+}
+
+
+
+
+#ResultsTable th {
+    font-weight:normal;
+    font-size:110%;
+
+}
+
+#ResultsTable  {
+    border-collapse:collapse;
+}
+.footer
+{
+   
+   font-size: 14px;
+   color: #5E6A71;
+   font-family:Arial;
+  float:left;
+}
+
+.footer1
+{
+   
+   font-size: 14px;
+   color: #5E6A71;
+   font-family:Arial;
+   float:right;
+}
+.LoginName
+{
+   
+   font-size: 14px;
+   color: #5E6A71;
+   font-family:Arial;
+   
+}
+
+.accordionHeadertext, .ui-accordion-header
+{
+        
+    
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1px;
+    text-align: right;
+}
+.ui-tabs-nav li 
+{
+    border: 1px solid #2F4F4F;
+    background-image: url('../images/nav_link.png');
+    background-repeat: repeat-x;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1px;
+    cursor: pointer;
+    text-align: right;
+    height: 28px;
+    list-style:none;
+    border-radius:0px;
+}
+
+.subHeader
+{
+    
+    
+    background-image: url('../images/5.png');
+    background-repeat: repeat-x;
+    height: 25px;
+    text-align: right;
+}
+
+.DivAlign
+{
+    text-align:right;
+}
+
+.lblForm
+{
+     float:right;
+}
+
+.Tbltr
+{
+    background-color:#F2F2F2;
+}
+	
+#branding ul li a.eng-lng {
+  color:black;
+}
+
+#branding ul li a.arb-lng {
+ color:red;
+}
+
+#branding .floatleft.logo-header{
+ float:right;
+}
+
+.grid_12 ul.nav li{
+ float:right;
+}
+
+#branding .header-login {
+    float: left;
+}
+
+#branding .user-name{
+ float:left;
+}
+
+#branding .user-name ul.inline-ul li{
+ /*float:left;
+ margin-right:3px;*/
+}
+/*-----COMBOX CSS--------------*/
+     .AjaxToolkitStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    /*background-image: url('../img/Search-32.png');*/
+    background-position: top left;
+    color: #000000;
+    padding: 1px 0px 3px 0px; 
+    font-size: 11px;
+    height: 18px;
+    width: 140px;
+}
+.AjaxToolkitStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    background-image: url('../img/icn_search.png');
+    background-position: top left;
+    border: 0px none;
+    height: 15px;
+    width: 15px;
+    background-color:transparent;
+}
+.AjaxToolkitStyle .ajax__combobox_itemlist
+{
+    border-color: #c9C9C9;
+    background-color: #FFFFFF;
+    width: 150px;
+}
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    margin: 0;
+    background-image: url(~/Images/aqua-bg.gif);
+    background-position: top left;
+    border: 0px none;
+    padding: 2px 0px 0px 8px;
+    font-size: 11px;
+    height: 17px;
+    width: 150px;
+}
+.AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    background-image: url(~/Images/aqua-arrow.gif);
+    background-position: top left;
+    border: 0px none;
+    height: 19px;
+    width: 19px;
+}
+.AquaStyle .ajax__combobox_itemlist
+{
+    border-color: #000000;
+    background-color: #FFFFFF;
+}
+.WindowsStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+{
+    margin: 0;
+    border: solid 1px #7F9DB9;
+    border-right: 0px none;
+    padding: 1px 0px 0px 5px;
+    font-size: 13px;
+    height: 18px;
+}
+.WindowsStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(~/Images/windows-arrow.gif');
+    background-position: top left;
+    border: 0px none;
+    height: 21px;
+    width: 21px;
+}
+.WindowsStyle .ajax__combobox_itemlist
+{
+    border-color: #7F9DB9;
+}
+
+.CustomComboBoxStyle .ajax__combobox_textboxcontainer input {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+    border-right: 0px none;
+}
+.CustomComboBoxStyle .ajax__combobox_buttoncontainer button {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+}
+/* for boxes */
+.container_12 .grid_21 {
+    float: right;
+    margin-left: 1%;
+    min-height: 500px;
+    width: 20%;
+}
+
+.container_12 .grid_10 
+ {
+    float: right;
+    margin-left: 2%;
+    width: 75%;
+}
+
+.box {
+	background:#fff;
+	margin-bottom:20px;
+	padding:10px 10px 10px 10px; margin-left:-8px;
+}
+.chzn-container .chzn-drop {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 100% ;
+  left: 9999px ;
+  -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+  -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+  box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+  z-index: 1010;
+  width: 160px;
+  -moz-box-sizing   : border-box;
+  -ms-box-sizing    : border-box;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing : border-box;
+  box-sizing        : border-box;
+ 
+}
+.chzn-container.chzn-with-drop .chzn-drop {
+  right: 0;
+}
+ul.nav li ul {
+	cursor:default;
+	width:100%;
+	max-width:100%;
+	position:absolute;
+	height:auto;
+	top:3.4em;
+	background-position:0 0 !important;
+	left:9000px;
+}
+
+ul.nav li.ic-dashboard a span, .ic-dashboard{background:url(../img/icon_Dashboard.png) no-repeat scroll center right;}
+ul.nav li.ic-typography a span, .ic-typography{background:url(../img/i_config.png) no-repeat center right;}
+ul.nav li.ic-charts a span, .ic-charts{background:url("../img/hearing.png") no-repeat center right transparent;}
+ul.nav li.ic-form-style a span, .ic-form-style{background:url(../img/icon-form-style.png) no-repeat center right;}
+ul.nav li.ic-grid-tables a span, .ic-grid-tables{background:url(../img/i_add_user.png) no-repeat center right;}
+ul.nav li.ic-gallery a span, .ic-gallery{background:url(../img/page_white_copy.png) no-repeat center right;}
+ul.nav li.ic-notifications a span, .ic-notifications{background:url(../img/icon-notifications.png) no-repeat center right;}
+ul.nav li {
+background-image: none !important;
+}
+
+ul.nav li a span {
+padding: 0px 30px 0px 0px;
+display: block;
+background-repeat: no-repeat;
+white-space: nowrap;
+}
+
+ul.main li ul li a {
+  width:12em;
+  line-height:3em;
+  height:3em;
+  text-align:right;
+  color:#fff;
+  border-top:1px solid #1A3A52;
+  background:#103D5F;
+}

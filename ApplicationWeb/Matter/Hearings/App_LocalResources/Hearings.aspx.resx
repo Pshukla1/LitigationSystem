@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HHearingDetails.Text" xml:space="preserve">
+    <value>Hearings Details</value>
+  </data>
+  <data name="HCAseNumbers.HeaderText" xml:space="preserve">
+    <value>Case #</value>
+  </data>
+  <data name="HCase_ID.HeaderText" xml:space="preserve">
+    <value>Hearing  ID</value>
+  </data>
+  <data name="HHearingdate1.HeaderText" xml:space="preserve">
+    <value>Hearing Date</value>
+  </data>
+  <data name="HHearing_Outcome_Desc_EN.HeaderText" xml:space="preserve">
+    <value>Hearing Outcome</value>
+  </data>
+  <data name="Hpleading.HeaderText" xml:space="preserve">
+    <value>Pleading</value>
+  </data>
+  <data name="HStaus_Desc.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="HaddDecision.Text" xml:space="preserve">
+    <value>Add Decision</value>
+  </data>
+  <data name="HaddDocument.Text" xml:space="preserve">
+    <value>Add Document</value>
+  </data>
+  <data name="HaddJudgement.Text" xml:space="preserve">
+    <value>Add Judgement</value>
+  </data>
+  <data name="Hcreatepladdings.Text" xml:space="preserve">
+    <value>Create Pleading</value>
+  </data>
+  <data name="Hnewhearings.Text" xml:space="preserve">
+    <value>New Hearing</value>
+  </data>
+  <data name="Thearingoutcome.Text" xml:space="preserve">
+    <value>Hearing Outcome</value>
+  </data>
+  <data name="TJudgement.Text" xml:space="preserve">
+    <value>Judgement</value>
+  </data>
+  <data name="TPleading.Text" xml:space="preserve">
+    <value>Pleadings</value>
+  </data>
+  <data name="HAttendedby.Text" xml:space="preserve">
+    <value>Attended By</value>
+  </data>
+  <data name="HCaseno.Text" xml:space="preserve">
+    <value>Case #</value>
+  </data>
+  <data name="Hdateprepared.Text" xml:space="preserve">
+    <value>Prepared Date</value>
+  </data>
+  <data name="Hdaterecvied.Text" xml:space="preserve">
+    <value>Date Recivied</value>
+  </data>
+  <data name="HDecisiondetails.Text" xml:space="preserve">
+    <value>Decision Details</value>
+  </data>
+  <data name="HHearingdate.Text" xml:space="preserve">
+    <value>Hearing Date</value>
+  </data>
+  <data name="HHearingnote.Text" xml:space="preserve">
+    <value>Hearing Note</value>
+  </data>
+  <data name="Hjudgementoutcomes.Text" xml:space="preserve">
+    <value>Judgement</value>
+  </data>
+  <data name="Houtcomestatus.Text" xml:space="preserve">
+    <value>Outcome</value>
+  </data>
+  <data name="HpleadingStatus.Text" xml:space="preserve">
+    <value>Pleading Status</value>
+  </data>
+  <data name="Hpreparedby.Text" xml:space="preserve">
+    <value>Prepared By</value>
+  </data>
+  <data name="Hreviewdate.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="HReviewdby.Text" xml:space="preserve">
+    <value>Reviewed By</value>
+  </data>
+  <data name="HStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AddDecision.Text" xml:space="preserve">
+    <value>Add Decision</value>
+  </data>
+  <data name="Addhearings.Text" xml:space="preserve">
+    <value>New Hearings</value>
+  </data>
+  <data name="ADDjudgement.Text" xml:space="preserve">
+    <value>Add Judgement</value>
+  </data>
+  <data name="CaseNo.Text" xml:space="preserve">
+    <value>Case #</value>
+  </data>
+  <data name="Createpladings.Text" xml:space="preserve">
+    <value>Create Pleadings</value>
+  </data>
+  <data name="DecsionDetails.Text" xml:space="preserve">
+    <value>Decision Details</value>
+  </data>
+  <data name="DecsionOutcome.Text" xml:space="preserve">
+    <value>Outcome</value>
+  </data>
+  <data name="HeAttendedBy.Text" xml:space="preserve">
+    <value>Attended by</value>
+  </data>
+  <data name="HEcaseID.Text" xml:space="preserve">
+    <value>Case ID</value>
+  </data>
+  <data name="HeHearingsDate.Text" xml:space="preserve">
+    <value>Hearing Date</value>
+  </data>
+  <data name="HeHearingsNotes.Text" xml:space="preserve">
+    <value>Discription</value>
+  </data>
+  <data name="Hestatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Judgement.Text" xml:space="preserve">
+    <value>Judgement</value>
+  </data>
+  <data name="JudgementDetails.Text" xml:space="preserve">
+    <value>Judgement Details</value>
+  </data>
+  <data name="MatterNo.Text" xml:space="preserve">
+    <value>Matter #</value>
+  </data>
+  <data name="pleadingpreparedate.Text" xml:space="preserve">
+    <value>Prepared Date</value>
+  </data>
+  <data name="Reviewby.Text" xml:space="preserve">
+    <value>Reviewed By</value>
+  </data>
+  <data name="JudgementDate.Text" xml:space="preserve">
+    <value>Judgement Date</value>
+  </data>
+  <data name="JudgementDoc.Text" xml:space="preserve">
+    <value>Judgement Document</value>
+  </data>
+  <data name="DelHearings.Text" xml:space="preserve">
+    <value>Delete Hearings</value>
+  </data>
+  <data name="Clientdocket.Text" xml:space="preserve">
+    <value>Client Docket</value>
+  </data>
+  <data name="Opponentdocket.Text" xml:space="preserve">
+    <value>Opponent Docket</value>
+  </data>
+  <data name="Pleadingdocket.Text" xml:space="preserve">
+    <value>Pleading Docket</value>
+  </data>
+</root>

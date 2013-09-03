@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitigationClearkLogic", "..\ApplicationLogic\LitigationClearkLogic\LitigationClearkLogic.csproj", "{2112C427-3A3E-424B-BAF0-94988B14C989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitigationLawyerLogic", "..\ApplicationLogic\LitigationLawyerLogic\LitigationLawyerLogic.csproj", "{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ApplicationWeb", "..\ApplicationWeb\", "{A92C0B3C-84FE-4671-A56C-9FDD1EA13376}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{2112C427-3A3E-424B-BAF0-94988B14C989}|LitigationClearkLogic.dll;{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}|LitigationDataLogic.dll;{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}|LitigationLawyerLogic.dll;{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}|Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ApplicationWeb"
+		Debug.AspNetCompiler.PhysicalPath = "..\ApplicationWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ApplicationWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ApplicationWeb"
+		Release.AspNetCompiler.PhysicalPath = "..\ApplicationWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ApplicationWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58349"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitigationDataLogic", "..\ApplicationLogic\LitigationDataLogic\LitigationDataLogic.csproj", "{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "C:\Users\pshukla1\Desktop\Dubai Project\Vishal_Test\Vishal_Test\Common\Common.csproj", "{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2112C427-3A3E-424B-BAF0-94988B14C989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2112C427-3A3E-424B-BAF0-94988B14C989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2112C427-3A3E-424B-BAF0-94988B14C989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2112C427-3A3E-424B-BAF0-94988B14C989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF2FED5-4BBE-4B9A-BED9-76FB1D71FAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92C0B3C-84FE-4671-A56C-9FDD1EA13376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92C0B3C-84FE-4671-A56C-9FDD1EA13376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92C0B3C-84FE-4671-A56C-9FDD1EA13376}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92C0B3C-84FE-4671-A56C-9FDD1EA13376}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AED5A7-CF1C-469B-8BE7-ACBB384E3C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A759EC6-AEE9-4B11-81A5-68D607F6E8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

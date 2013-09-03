@@ -1,0 +1,105 @@
+/* Essentials */
+
+html, div, map, dt, isindex, form, header, aside, section, section, article, footer {  
+    display: block;  
+} 
+
+html, body, #page {
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+background: #F8F8F8;
+font-size: 12px;
+}
+
+#header:before, #header:after, #main:before, #main:after, #footer:before, #footer:after {
+    content: "";
+    display: table;
+}
+
+.clear {
+clear: both;
+}
+
+.spacer {
+height: 20px;
+}
+
+a:link, a:visited {
+color: #77BACE;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+
+#header {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #D4D4D4;
+    border-top: 5px solid #333366;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
+    min-height: 66px;
+    width: 100%;
+}
+.header,#content, .footer-table {
+  width:100%;
+}
+ .footer-table {
+ }
+#main  {
+  width:100%;
+    min-height:500px;
+}
+
+#content {
+  min-height:500px;
+}
+
+
+#sidebar .box .h_title {
+    background: url("../img/bg_box_head.jpg") repeat-x scroll 0 0 transparent;
+    color: #BEBEBE;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: normal;
+    height: 22px;
+    padding: 7px 0 0 15px;
+    text-shadow: 0 1px 1px #0E0E0E;
+}
+
+#sidebar .box ul li, #sidebar_right .half_w ul li {
+    padding: 8px 0 8px 5px;
+}
+
+#sidebar .box ul, #sidebar_right .half_w ul {
+    list-style: none outside none;
+    padding-left:0px;
+}
+
+#sidebar .b1{
+	background: #ffffff;
+}
+#sidebar .b2{
+	background: #f7f7f7;
+}
+
+#sidebar a {
+    color: #656565;
+}
+.box ul li .icon, .half_w ul li .icon{ padding: 2px 0 2px 22px;}
+.box ul li .page{ background: url(../img/i_page.png) no-repeat center left;}
+.box ul li .view_page{ background: url(../img/i_view_page.png) no-repeat center left;}
+.box ul li .category{ background: url(../img/i_category.png) no-repeat center left;}
+.box ul li .contact{ background: url(../img/i_contact.png) no-repeat center left;}
+.box ul li .report{ background: url(../img/i_report.png) no-repeat center left;}
+.box ul li .add_page, #sidebar_right .half_w ul li .add_page{ background: url(../img/i_add_page.png) no-repeat center left;}
+.box ul li .photo{ background: url(../img/i_photo.png) no-repeat center left;}
+.box ul li .config{ background: url(../img/i_config.png) no-repeat center left;}
+.box ul li .users{ background: url(../img/i_users.png) no-repeat center left;}
+.box ul li .add_user{ background: url(../img/i_add_user.png) no-repeat center left;}
+.box ul li .block_users{ background: url(../img/i_block_users.png) no-repeat center left;}
+
